@@ -73,7 +73,7 @@ checkout(Host0, Port, Transport, #client{options=Opts}=Client) ->
       {error, no_socket, {Name, RequestRef, CheckinReference, Owner,
         Transport}};
     {error, Reason} ->
-      {error, Reason};
+      {error, Reason}
   end.
 
 %% @doc release a socket in the pool
